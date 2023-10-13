@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="pagePiling.js-master/jquery.pagepiling.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="pagePiling.js-master/jquery.pagepiling.min.js"></script>
+</head>
+<body>
+    <div id="pagepiling">
+        <div class="section" id="section1">
+            <!-- ここにページ1の内容を記述 -->
+        </div>
+        <div class="section" id="section2">
+            <!-- ここにページ2の内容を記述 -->
+        </div>
+        <div class="section" id="section3">
+            <!-- ここにページ3の内容を記述 -->
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#pagepiling').pagepiling({
+                menu: '#menu',
+                anchors: ['page1', 'page2', 'page3'],
+                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE'],
+                navigation: {
+                    'position': 'right',
+                    'tooltips': ['Page 1', 'Page 2', 'Page 3']
+                },
+                scrollingSpeed: 700,
+                easing: 'swing',
+                loopBottom: false,
+                loopTop: false,
+            });
+        });
+    </script>
+</body>
+</html>
