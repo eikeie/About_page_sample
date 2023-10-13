@@ -1,0 +1,297 @@
+#id{
+    width: 100%;
+    height: 100vh;
+}
+
+.top{
+    height: auto;
+    min-height: 8%;
+}
+
+.top_menu{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin: 0;;
+    padding: 0;
+    top: 0;
+    position: fixed;
+    z-index: 70;
+    background-color: rgb(255, 173, 67);
+}
+
+.contIn{
+    padding-right: 0px;
+    display: flex;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.fv_titlewrap{
+    order: 2;
+    width: 50%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.fv_mvtrap{
+    order: 1;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.titlelogo{
+    width: 73.334%;
+    /*padding-top: 10.8334%;*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: 220%;
+    color: rgb(255, 0, 242);
+}
+/*#top .top_content ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background-color: #95d6cc;
+}
+.fv_mv{
+    
+}*/
+.fv_mv{
+    width: 73.334%;
+    padding-top: 68.334%;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 10%;
+    height: 100%;
+}
+
+.fv_mv img{
+    object-fit: contain;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+}
+
+#fv_Inmv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+}
+
+#mv1{
+    background-image: url(https://takagi3.me/assets/img/top/fv_mv4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    transform: scale(1);
+    filter: blur(0px);
+}
+
+#mv4{
+    background-image: url(https://takagi3.me/assets/img/top/fv_mv3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    filter: blur(0px);
+    object-fit: fill;
+}
+
+#mv2{
+    background-image: url(https://takagi3.me/assets/img/top/fv_mv1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+#mv3{
+    background-image: url(	https://takagi3.me/assets/img/top/fv_mv2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+.mv{
+    object-fit: cover;
+    position: absolute;
+    transform: scale(1);
+    filter: blur(0px);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    opacity: 0;
+	animation: change-img-anim 24s infinite;
+}
+
+.mv:nth-of-type(1) {
+	animation-delay: 0s;
+}
+.mv:nth-of-type(2) {
+	animation-delay: 6s;
+}
+.mv:nth-of-type(3) {
+	animation-delay: 12s;
+}
+.mv:nth-of-type(4) {
+	animation-delay: 18s;
+}
+
+@keyframes change-img-anim {
+	0%{ opacity: 0;}
+	20%{ opacity: 1;}
+	30%{ opacity: 1;}
+	35%{ opacity: 0;}
+	100%{ opacity: 0;}
+}
+
+.bnr_top{
+    position: absolute;
+    max-width: 180px;
+    max-height: 180px;
+    width: 111.25vw;
+    height: 111.25vw;
+    top: 50px;
+    left: 51%;
+    display: inline-block;
+    margin-bottom: 10%;
+    /*right: calc(50% - 11.25vw - 32px);*/
+}
+
+.top_aikon{
+    display: flex;
+    float: left;
+    margin-left: 0;
+}
+
+.top_databases{
+    position: absolute;
+    top: 60px;
+    margin-left: 1%;
+    align-items: center;
+    transition-duration: 0.5s; /*変化の時間*/
+}
+
+.top_databases:hover {
+    transform: scale(1.1,1.1); /*画像の拡大*/
+    cursor: pointer; /*カーソルをポインターにする*/
+}
+
+.aikon_fukidasi{
+    width: 55px;
+    height: 54px;
+    background: url(https://takagi3.me/assets/img/common/fukidashi.svg) no-repeat center center / contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 15px;
+    color: #d089a0;
+    font-weight: 500;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.sec_chara01{
+    width: 130px;
+    height: 120px;
+    margin-left: 20px;
+    background: url(https://takagi3.me/assets/img/common/secChara/chara_01.png)no-repeat left bottom / 130px 120px;
+}
+
+.top_info{
+    position: absolute;
+    top: 60px;
+    align-items: center;
+    margin-left: 140px;
+    transition-duration: 0.5s; /*変化の時間*/
+}
+
+.top_info:hover {
+    transform: scale(1.1,1.1); /*画像の拡大*/
+    cursor: pointer; /*カーソルをポインターにする*/
+}
+
+.aikon_fukidasi02{
+    width: 55px;
+    height: 54px;
+    background: url(https://takagi3.me/assets/img/common/fukidashi.svg) no-repeat center center / contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 15px;
+    color: #d089a0;
+    font-weight: 500;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.sec_chara02{
+    width: 130px;
+    height: 120px;
+    margin-left: 30px;
+    background: url(https://takagi3.me/assets/img/common/secChara/chara_02.png)no-repeat left bottom / 130px 120px;
+}

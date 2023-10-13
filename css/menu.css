@@ -1,0 +1,104 @@
+
+    p{
+        font-size: 2em;
+    }
+    .section{
+        text-align: center;
+    }
+ 
+    /* menu
+     * --------------------------------------- */
+    #menu li {
+        display:inline-block;
+        margin: 10px;
+        color: #000;
+        background:#fff;
+        background: rgba(255,255,255, 0.5);
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+    }
+    #menu li.active{
+        background:#666;
+        background: rgba(0,0,0, 0.5);
+        color: #fff;
+    }
+    #menu li a{
+        text-decoration:none;
+        color: #000;
+    }
+    #menu li.active a:hover{
+        color: #000;
+    }
+    #menu li:hover{
+        background: rgba(255, 71, 71, 0.8);
+    }
+    #menu li a,
+    #menu li.active a{
+        padding: 9px 18px;
+        display:block;
+    }
+    #menu li.active a{
+        color: #fff;
+    }
+    #menu{
+        position: fixed;
+        text-align: right;
+        bottom: 7%;
+        right: 0;
+        height: 40px;
+        z-index: 70;
+        width: 100%;
+        padding: 0;
+        margin:0;
+    }
+ 
+    /* Section 1
+     * --------------------------------------- */
+    #section1 h1{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    #section1 p{
+        color: #333;
+        color: rgba(0,0,0,0.3);
+    }
+ 
+    /* Section 2
+     * --------------------------------------- */
+    #section2 h1,
+    #section2 p{
+        z-index: 3;
+    }
+    #section2 p{
+        opacity: 0.8;
+    }
+ 
+    #section2 #colors{
+        right: 60px;
+        bottom: 0;
+        position: absolute;
+        height: 413px;
+        width: 258px;
+    }
+ 
+    /* Section 3
+     * --------------------------------------- */
+    #section3 #colors{
+        left: 60px;
+        bottom: 0;
+    }
+    #section3 p{
+        color: #757575;
+    }
+ 
+    /* Section 4
+     * --------------------------------------- */
+    #section4 p{
+        opacity: 0.6;
+    }
+ 
+    /* Overwriting fullPage.js tooltip color
+    * --------------------------------------- */
+    #pp-nav.custom .pp-tooltip{
+        color: #AAA;
+    }
