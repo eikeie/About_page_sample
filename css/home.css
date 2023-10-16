@@ -98,4 +98,8 @@
     #child4 {
         flex-grow: 3.5;
     }
+
+    .inline {
+        display: inline-block;
+    }
 }
