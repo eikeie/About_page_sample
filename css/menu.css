@@ -54,6 +54,10 @@
  
     /* Section 1
      * --------------------------------------- */
+    #section1{
+        background: linear-gradient(#33fb68, rgb(163, 163, 163)); 
+    } 
+
     #section1 h1{
         font-size: 24px;
         font-weight: bold;
@@ -65,6 +69,10 @@
  
     /* Section 2
      * --------------------------------------- */
+    #section2{
+        background: linear-gradient(#FBB03B, rgb(156, 156, 156)); 
+    } 
+
     #section2 h1,
     #section2 p{
         z-index: 3;
@@ -83,6 +91,10 @@
  
     /* Section 3
      * --------------------------------------- */
+    #section3{
+        background: linear-gradient(#FBB03B, rgb(156, 156, 156)); 
+    } 
+
     #section3 #colors{
         left: 60px;
         bottom: 0;
@@ -93,6 +105,10 @@
  
     /* Section 4
      * --------------------------------------- */
+    #section4{
+        background: linear-gradient(#FBB03B, rgb(156, 156, 156)); 
+    } 
+
     #section4 p{
         opacity: 0.6;
     }

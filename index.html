@@ -15,22 +15,40 @@
     </div>
     <div id="pagepiling">
         <div class="section" id="section1">
-            <p stype="text-aligin: center">～赤羽台祭のテーマ～<br>
-                今年の大学祭のテーマ「ENchant !」は、コロナ禍がある程度収束し<br>
-                日常が戻りつつある昨今、人と人と<br>
-                の縁を大切にし、<br>
-                来場者の皆様を魅了させる大学祭<br>
-                を目指したいという意味を込めています。<br>
-                トーラス結び目のようなデザインをしたロゴは<br>
-                「多様な人々と協力して一つの大学祭を作り上げ、繋がる」という観点を<br>
-                表現しています。
-            </p>
+            <div style="text-align: center;">
+                <p style="overflow-wrap: normal; padding: 3%; margin: 2%; color: black;" >
+                    <b>～赤羽台祭のテーマ～</b><br><br>
+                    今年の大学祭のテーマ「ENchant !」は、コロナ禍がある程度収束し日常が戻りつつある昨今、人と人との縁を大切にし、来場者の皆様を魅了させる大学祭を目指したいという意味を込めています。トーラス結び目のようなデザインをしたロゴは「多様な人々と協力して一つの大学祭を作り上げ、繋がる」という観点を表現しています。
+                </p>
+            </div>
         </div>
         <div class="section" id="section2">
-            <h1>あおばのあいさつ</h1>
+            <div id="greeting_aoba">
+                <div id="child1">
+                    <div style="text-align: center;">
+                        <h2>あおばの写真</h2>
+                        <!--<p>INIAD部門委員長　佐藤蒼巴</p>-->
+                    </div>
+                </div>
+                <div id="child2">
+                    <h2>あおばのあいさつ</h2>
+                </div>
+            </div>
         </div>
         <div class="section" id="section3">
-            <h1>林さんのあいさつ</h1>
+            <div id="greeting_hayashi">
+                <div id="child3">
+                    <div>
+                        <h2>林さんあいさつ</h2>
+                    </div>
+                </div>
+                <div id="child4">
+                    <div style="text-align: center;">
+                        <!--<p>WELLB部門委員長　林宇未</p>-->
+                        <h2 style="color: white;">林さんの写真</h2> 
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="section" id="section4">
             <h1>予備</h1>
@@ -51,10 +69,10 @@
                 menu: '#menu',
                 sectionSelector: '.section',
                 anchors: ['page1', 'page2', 'page3', 'page4'],
-                sectionsColor: ['#f0e68c', '#4BBFC3', '#7BAABE', '#39C'],
+                //sectionsColor: ['#f0e68c', '#4BBFC3', '#7BAABE', '#39C'],
                 navigation: false,
                 scrollingSpeed: 700,
-                easing: 'swing',
+                easing: 'linear',
                 loopBottom: false,
                 loopTop: false,
             });
